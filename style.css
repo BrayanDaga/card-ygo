@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 10px;
+    border-radius: 8px;
+    margin: auto;
+    padding: 10px;
+    width: 340px;
+    /* height: 520px; */
+    border: 6px solid rgb(59, 59, 59);
+}
+
+.sincro {
+    background-color: #dfdfdf;
+}
+
+.pendulum {
+    background: rgb(15,150,97);
+    background: linear-gradient(0deg, rgba(15,150,97,1) 40%, rgba(233,148,28,1) 60%);
+}
+
+/***Card title****/
+
+.card .card-title {
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.card .card-title p {
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card .card-title>img {
+    width: 25px;
+}
+
+/* Card star */
+
+.card .card-star {
+    padding: 5px;
+    display: flex;
+    justify-content: right;
+}
+
+.card .card-star img {
+    margin-left: 2px;
+    width: 20px;
+}
+
+/* Card Image */
+
+
+.card .card-image img {
+    border-radius: 5px;
+    border: 4px solreid gray;
+    width: 100%;
+}
+
+/*Card Descrip*/
+
+/* Sincro */
+.card.sincro .card-descrip {
+    border-radius: 5px;
+    border: 3px solid peru;
+    padding: 2px;
+    font-size: 13px;
+    /* height: 96px; */
+}
+
+.card.sincro .card-descrip .text-descrip {
+    overflow: scroll;
+    height: 100px;
+    line-height: 10px;
+}
+/* Pendulo */
+
+.card.pendulum .pendulo-descri,
+.card.pendulum .text-descrip{
+    background-color: rgb(211, 236, 221);
+}
+
+.card.pendulum .pendulo-descri{
+    display: flex;
+    height: 80px;
+}
+
+.card.pendulum .pendulo-descri .scala,
+.card.pendulum .pendulo-descri .text{
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    border-radius: 2px;
+}
+
+.card.pendulum .pendulo-descri .scala{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.card.pendulum .pendulo-descri .scala:first-child{
+ 
+    border-left: 2px solid gray;
+    border-right: 1px solid gray;
+}
+.card.pendulum .pendulo-descri .scala:last-child{
+
+    border-left: 1px solid gray;
+    border-right: 2px solid gray;
+}
+
+
+.card.pendulum .pendulo-descri .scala img{
+    width: 80%;
+}
+.card.pendulum .pendulo-descri .scala span{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+.card.pendulum .pendulo-descri .text{
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    font-size: 10px;
+    line-height: 10px;
+    /* flex-grow: 4; */
+}
+
+.card.pendulum .card-descrip .text-descrip {
+    height: 78px;
+    line-height: 10px;
+}
+.card.pendulum .card-descrip {
+    padding: 5px;
+    margin-top: 3px;
+    border-radius: 5px;
+    border: 3px solid gray;
+    font-size: 13px;
+
+}
+
+/*  */
+
+.card .card-descrip .text-descrip p {
+    margin-top: 2px;
+}
+
+.card .card-descrip p:first-child {
+    font-weight: bold;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+
+/* .card-descrip  */
+
+.card .card-descrip .points-descrip {
+    border-top: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: end;
+}
